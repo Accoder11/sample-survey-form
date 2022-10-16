@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Sample Project</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="background">
+  <h1 id="title">Most Favorite K-drama Survey Form</h1>
+  <p id="description">Chingus! This is your chance to flex your favorite K-drama.</p>
+<!-- Form action link is just for training purposes --> 
+  <form action="https://www.google.com/" id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name <input id="name" type="text" name="name" placeholder="Enter your name" required /></label>
+      <label for="email" id="email-label">Email <input id="email" type="email" name="email" placeholder="Enter your Email" required /></label>
+      <label for="number" id="number-label">Age <em><small>(optional) <input id="number" type="number" name="number" min="15" max="120" placeholder="Age" /></small></em></label>
+      <label for="country" id="country-label">Where are you from? <input id="country" type="text" name="country" placeholder="Ex. Canada" required /></label>
+    </fieldset>
+    <fieldset>
+      <label for="Kdrama" id="Kdrama-label">Your Favorite K-Drama Title<input id="kdrama" type="text" name="kdrama" placeholder="Ex. Scarlet Heart Ryeo" /></label>
+      <label for="dropdown"> Genre of your favorite K-Drama
+<!-- dropdown -->
+      <select id="dropdown" name="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Medical</option>
+        <option value="2">Action</option>
+        <option value="3">Historical</option>
+        <option value="4">Horror</option>
+        <option value="5">Romance</option>
+        <option value="6">Other</option>
+      </select>
+      </label>
+    </fieldset>
+    <fieldset>
+<!-- checkbox -->
+      <label >Things you'd like the most about K-Dramas<em><small> (check all that apply)</small></em></label>
+      <label for="cast" name="cast"><input id="cast" type="checkbox" name="cast" value="cast" class="inline" /> The beautiful and handsome cast members </label>
+      <label for="outfit" name="outfit"><input id="outfit" type="checkbox" name="outfit" value="outfit" class="inline" /> The characters’ fashionable outfits </label>
+      <label for="storyline" name="storyline"><input id="storyline" type="checkbox" name="storyline" value="storyline" class="inline" /> The unique and unexpected plotlines or storylines </label>
+      <label for="humor" name="humor"><input id="humor" type="checkbox" name="humor" value="humor" class="inline" /> The charming sense of humor and quirky antics </label>
+      <label for="marathon" name="marathon"><input id="marathon" type="checkbox" name="marathon" value="marathon" class="inline"/> The easy-to-marathon format </label>
+      <label for="viewing" name="viewing"><input id="viewing" type="checkbox" name="viewing" value="viewing" class="inline" /> The mind-enriching viewing experience </label>
+      <label for="cinematography" name="cinematography"><input id="cinematography" type="checkbox" name="cinematography" value="cinematography" class="inline" /> The cinematography </label>
+      <label for="location" name="location"><input id="location" type="checkbox" name="location" value="location" class="inline" /> The locations </label>
+      <label for="soundtrack" name="soundtrack"><input id="soundtrack" type="checkbox" name="soundtrack" value="soundtrack" class="inline" /> The soundtrack </label>
+      <label for="script" name="script"><input id="script" type="checkbox" name="script" value="script" class="inline" /> The script </label>
+      <label for="family-friendly" name="family-friendly"><input id="family-friendly" type="checkbox" name="family-friendly" value="family-friendly" class="inline"/> The family-friendly themes </label>
+      <fieldset>
+<!-- radio button -->
+      <label for="recommend" >Would you recommend this K-Drama to a friend?</label>
+        <label for="definitely"><input id="definitely" type="radio" name="recommend-option" value="yes" class="inline"/> Difinitely</label>
+        <label for="no"><input id="no" type="radio" name="recommend-option" value="no" class="inline" /> No</label>
+        <label for="not-sure"><input id="not-sure" type="radio" name="recommend-option" value="not-sure" class="inline" /> Not Sure</label>
+  </label>
+<!-- textarea -->
+      <label for="comments" id="comments-label" >Tell us more about your favorite K-Drama <textarea id="comments" name="comments" value="comments" rows="4" cols="30" placeholder="Scarlet Heart Ryeo is about..." required></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit" id="submit" />
+  </form>
+  </div>
+</body>
+</html>
