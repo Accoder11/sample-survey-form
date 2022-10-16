@@ -85,4 +85,6 @@ input[type="submit"]::after {
     left: -100px;
     background-color: #ff3cac;
     background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    z-index: -1;
+    transition: transform 0.5s ease;
 }
